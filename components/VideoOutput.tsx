@@ -39,9 +39,7 @@ export default function VideoOutput({ videoUrl, onReset }: VideoOutputProps) {
         console.error('Sharing failed:', error);
       }
     } else {
-      // Fallback to copying URL to clipboard
       navigator.clipboard.writeText(videoUrl);
-      // You could show a toast notification here
     }
   };
 

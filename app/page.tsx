@@ -35,7 +35,7 @@ export default function SpeakPortraitApp() {
   };
 
   const handleGenerate = async () => {
-    // Validation
+
     if (!state.image) {
       updateState({ error: 'Please upload an image first.' });
       return;
@@ -63,12 +63,10 @@ export default function SpeakPortraitApp() {
         formData.append('audio', state.audioFile!);
       }
 
-      // Replace with your actual backend endpoint
       const response = await fetch('/api/generate', {
         method: 'POST',
         body: formData,
         headers: {
-          // Include this header if using ngrok
           'ngrok-skip-browser-warning': 'true',
         },
       });
@@ -190,7 +188,6 @@ export default function SpeakPortraitApp() {
 
         {/* Footer */}
         <div className="text-center mt-12 text-slate-500 text-sm">
-          <p>Powered by advanced AI technology • Create amazing speaking portraits in seconds</p>
         </div>
       </div>
     </div>

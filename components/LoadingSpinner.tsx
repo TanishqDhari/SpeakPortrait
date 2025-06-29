@@ -50,7 +50,7 @@ export default function LoadingSpinner() {
         {/* Fun Fact */}
         <div className="mt-8 p-4 bg-white/60 rounded-lg border border-indigo-100">
           <p className="text-xs text-slate-500 italic">
-            💡 Did you know? Our AI analyzes over 100 facial landmarks to create realistic speech movements!
+            💡 Did you know? Insert some crazy facts!
           </p>
         </div>
       </div>
