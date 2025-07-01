@@ -29,5 +29,5 @@
 ### 1. Clone this repository
 
 ```bash
-git clone https://github.com/your-username/speakportrait.git
+git clone https://github.com/TanishqDhari/SpeakPortrait.git
 cd speakportrait
