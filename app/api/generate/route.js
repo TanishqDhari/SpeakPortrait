@@ -1,8 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-export async function POST(req: NextRequest) {
+export async function POST(req) {
   const formData = await req.formData();
-
   const ngrokUrl = process.env.NEXT_PUBLIC_API_URL + '/generate';
 
   const res = await fetch(ngrokUrl, {
@@ -12,6 +11,7 @@ export async function POST(req: NextRequest) {
       'ngrok-skip-browser-warning': 'false',
     },
   });
+
 
   if (!res.ok) {
     return NextResponse.json({ error: 'Failed to generate video' }, { status: 500 });

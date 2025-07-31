@@ -79,9 +79,9 @@ export default function ImageUpload({ image, onImageSelect }: ImageUploadProps) 
             <X className="h-4 w-4" />
           </Button>
         </div>
-        <div className="p-4 bg-white/80 backdrop-blur-sm">
-          <p className="text-sm text-slate-600 font-medium">{image.name}</p>
-          <p className="text-xs text-slate-500">
+        <div className="p-4 bg-gray-800 backdrop-blur-sm">
+          <p className="text-sm text-gray-300 font-medium">{image.name}</p>
+          <p className="text-xs text-gray-400">
             {(image.size / 1024 / 1024).toFixed(2)} MB
           </p>
         </div>
@@ -91,7 +91,7 @@ export default function ImageUpload({ image, onImageSelect }: ImageUploadProps) 
 
   return (
     <Card
-      className={`relative border-2 border-dashed transition-all duration-200 cursor-pointer hover:border-indigo-400 hover:bg-indigo-50/50 ${
+      className={`relative border-2 border transition-all duration-200 cursor-pointer hover:border-indigo-400 hover:bg-indigo-50/50 ${
         dragActive ? 'border-indigo-500 bg-indigo-50' : 'border-slate-300'
       }`}
       onDragEnter={handleDrag}
@@ -117,11 +117,11 @@ export default function ImageUpload({ image, onImageSelect }: ImageUploadProps) 
           </div>
         </div>
         
-        <h3 className="text-xl font-semibold text-slate-800 mb-2">
+        <h3 className="text-xl font-semibold text-gray-200 mb-2">
           {dragActive ? 'Drop your image here' : 'Upload Portrait Image'}
         </h3>
         
-        <p className="text-slate-500 mb-6 max-w-sm">
+        <p className="text-gray-300 mb-6 max-w-sm">
           Drag and drop your portrait image here, or click to browse. 
           Best results with clear, well-lit face photos.
         </p>
@@ -131,8 +131,8 @@ export default function ImageUpload({ image, onImageSelect }: ImageUploadProps) 
           Choose Image
         </Button>
         
-        <p className="text-xs text-slate-400 mt-4">
-          Supports JPG, PNG, WEBP • Max 10MB
+        <p className="text-xs text-gray-300 mt-4">
+          Supports JPG, PNG, WEBP
         </p>
       </div>
     </Card>

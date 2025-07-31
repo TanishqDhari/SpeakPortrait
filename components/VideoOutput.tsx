@@ -50,8 +50,8 @@ export default function VideoOutput({ videoUrl, onReset }: VideoOutputProps) {
           <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
           Video Generated Successfully!
         </div>
-        <h2 className="text-3xl font-bold text-slate-800 mb-2">Your Speaking Portrait</h2>
-        <p className="text-slate-600">Your AI-generated speaking portrait is ready to watch and share!</p>
+        <h2 className="text-3xl font-bold text-gray-300 mb-2">Your Speaking Portrait</h2>
+        <p className="text-gray-300">Your AI-generated speaking portrait is ready to watch and share!</p>
       </div>
 
       <Card className="overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100">
@@ -75,7 +75,7 @@ export default function VideoOutput({ videoUrl, onReset }: VideoOutputProps) {
           </div>
         </div>
         
-        <div className="p-6 bg-white/80 backdrop-blur-sm">
+        <div className="p-6 bg-black backdrop-blur-sm">
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Button
               onClick={handleDownload}

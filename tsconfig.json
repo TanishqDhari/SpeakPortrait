@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "lib/utils.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "lib/utils.ts", "app/api/generate/route.js", "app/api/zonos/route.js", "app/page.jsx", "components/InputSelector.jsx"],
   "exclude": ["node_modules"]
 }
