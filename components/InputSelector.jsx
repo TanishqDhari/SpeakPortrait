@@ -189,7 +189,7 @@ export default function InputSelector({
 
             {/* Emotion */}
             <div className="space-y-3">
-              <label className="text-sm font-medium text-gray-200">Voice Emotion</label>
+              <label className="text-sm font-medium text-gray-200">Emotion</label>
               <Select
                 value={selectedEmotion}
                 onValueChange={(val) => {
@@ -329,7 +329,7 @@ export default function InputSelector({
 
       {/* Emotion */}
           <div className="space-y-3 mb-5">
-            <label className="text-sm font-medium text-gray-200">Voice Emotion</label>
+            <label className="text-sm font-medium text-gray-200">Emotion</label>
             <Select
               value={selectedEmotion}
               onValueChange={(val) => {
